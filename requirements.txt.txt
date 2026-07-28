@@ -1,6 +1,0 @@
-streamlit
-numpy
-scipy
-plotly
-pandas
-sounddevice
