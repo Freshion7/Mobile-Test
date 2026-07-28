@@ -233,16 +233,4 @@ elif current_page == 'Analysis':
 
 elif current_page in ['Acquisition', 'Listening', 'Editing', 'Presentation', 'Settings', 'About']:
     st.title(f"📍 {current_page} 模块")
-    st.info(f"当前正在开发模块：{current_page}。我们已完成了第一个核心模块 'Analysis' 的部署。")        fig.add_trace(go.Scatter(x=x, y=y, mode='lines', name='模拟频谱', line=dict(width=3)))
-        fig.update_layout(
-            title="📊 当前频谱图 (模拟数据)",
-            height=450,
-            margin=dict(l=20, r=20, t=40, b=20),
-            xaxis_title="频率 (Hz)",
-            yaxis_title="幅值"
-        )
-        st.plotly_chart(fig, use_container_width=True)
-        st.success("✅ 分析完成！环境验证通过。")
-        st.session_state["run"] = False
-else:
-    st.info("👈 请在左侧点击 '生成模拟数据' 查看效果")
+    st.info(f"当前正在开发模块：{current_page}。我们已完成了第一个核心模块 'Analysis' 的部署。")
